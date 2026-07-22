@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="noindex, nofollow"/><meta name="generator" content="v1-comarketing-site-20260722"/>
+<title>Co-marketing with WorldFirst</title><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/><style>
+:root{--ink:#141414;--mut:#6f6f6f;--hair:#e6e3dd;--bg:#faf9f7;--card:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,-apple-system,'PingFang SC',sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;font-size:15.5px;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+/* nav */
+nav.top{border-bottom:1px solid var(--hair);background:rgba(250,249,247,.92);backdrop-filter:blur(8px);position:sticky;top:0;z-index:20}
+nav.top .wrap{display:flex;align-items:center;gap:26px;height:58px}
+nav.top .brand{font-weight:600;font-size:14px;letter-spacing:.01em;margin-right:auto}
+nav.top a{text-decoration:none;color:var(--mut);font-size:13.5px}
+nav.top a:hover,nav.top a.on{color:var(--ink)}
+/* hero */
+header.hero{padding:78px 0 44px}
+.eyebrow{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--mut)}
+h1{font-family:Fraunces,serif;font-weight:500;font-size:46px;line-height:1.12;margin:14px 0 16px;letter-spacing:-.01em}
+h1 em{font-style:italic}
+.lede{color:var(--mut);max-width:60ch;font-size:17px;line-height:1.6}
+/* sections */
+section{padding:40px 0;border-top:1px solid var(--hair)}
+section:first-of-type{border-top:none}
+h2{font-family:Fraunces,serif;font-weight:500;font-size:26px;margin-bottom:8px}
+h3{font-family:Fraunces,serif;font-weight:500;font-size:18px;margin:26px 0 8px}
+p{margin-bottom:13px;max-width:70ch}
+p.note{color:var(--mut);font-size:13.5px}
+.sec-lede{color:var(--mut);margin-bottom:22px;max-width:66ch}
+/* stat band */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));border:1px solid var(--hair);border-radius:12px;overflow:hidden;background:var(--card);margin:22px 0}
+.stat{padding:18px 20px;border-right:1px solid var(--hair)}
+.stat:last-child{border-right:none}
+.stat-n{font-family:'JetBrains Mono',monospace;font-size:26px;font-weight:500}
+.stat-l{font-size:12px;color:var(--mut);margin-top:2px}
+/* package */
+.pack{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:20px 0 8px}
+.pk{background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:20px}
+.pk-n{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--mut);letter-spacing:.08em}
+.pk-t{font-family:Fraunces,serif;font-size:17px;margin:6px 0 6px;line-height:1.3}
+.pk-d{font-size:13.5px;color:#3a3a3a;line-height:1.6}
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:14px}
+@media(max-width:720px){.split{grid-template-columns:1fr}}
+.side-t{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:6px}
+/* steps */
+.steps{counter-reset:s;margin-top:14px}
+.step{display:flex;gap:16px;padding:14px 0;border-bottom:1px solid var(--hair)}
+.step:last-child{border-bottom:none}
+.step-n{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--mut);padding-top:3px;min-width:26px}
+.step-b strong{display:block;margin-bottom:2px}
+.step-b span{font-size:13.5px;color:var(--mut)}
+/* cases */
+.cases{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin-top:16px}
+.case{display:block;background:var(--card);border:1px solid var(--hair);border-radius:12px;overflow:hidden;text-decoration:none;transition:border-color .2s}
+.case:hover{border-color:#c9c4ba}
+.case-shot{display:block;aspect-ratio:16/9;overflow:hidden;background:#f2f0ec}
+.case-shot img{width:100%;height:100%;object-fit:cover;display:block}
+.case-body{display:block;padding:13px 15px 15px}
+.case-brands{display:block;font-weight:600;font-size:13px;margin-bottom:3px}
+.case-line{display:block;font-size:12.5px;color:var(--mut);line-height:1.55}
+/* own work */
+.owns{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-top:14px}
+.own{display:block;background:var(--card);border:1px solid var(--hair);border-radius:10px;padding:14px 16px;text-decoration:none}
+.own:hover{border-color:#c9c4ba}
+.own-t{display:block;font-weight:600;font-size:13.5px;margin-bottom:2px}
+.own-l{display:block;font-size:12.5px;color:var(--mut);line-height:1.5}
+/* doors */
+.doors{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:18px}
+.door{display:block;background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:22px;text-decoration:none;transition:border-color .2s}
+.door:hover{border-color:var(--ink)}
+.door-t{font-family:Fraunces,serif;font-size:19px;margin-bottom:6px}
+.door-d{font-size:13.5px;color:var(--mut);line-height:1.6}
+.door-x{display:inline-block;margin-top:10px;font-size:12.5px;color:var(--mut)}
+/* optional callout */
+.opt{background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:22px 24px;margin-top:16px}
+.opt-tag{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px}
+/* cta */
+.cta{background:var(--ink);color:#fff;border-radius:14px;padding:34px 36px;margin:26px 0 46px}
+.cta h2{color:#fff}
+.cta p{color:#d6d2cb;max-width:56ch}
+footer{border-top:1px solid var(--hair);padding:22px 0 40px;color:var(--mut);font-size:12.5px;display:flex;gap:18px;flex-wrap:wrap}
+@media(max-width:720px){h1{font-size:34px}.wrap{padding:0 20px}.cta{padding:26px 22px}}
+</style></head>
+<body><nav class="top"><div class="wrap"><span class="brand">WorldFirst · Co-marketing</span><a href="./" class="on">Overview</a><a href="marketplaces.html" class="">Marketplaces</a><a href="banks.html" class="">Banks &amp; networks</a><a href="clients.html" class="">Clients &amp; brands</a></div></nav><div class="wrap">
+<header class="hero">
+  <p class="eyebrow">WorldFirst · Co-marketing</p>
+  <h1>Two brands. One story.<br/><em>Both audiences.</em></h1>
+  <p class="lede">WorldFirst co-markets with the partners and clients we already work with. We produce it, we publish it, and both brands come out larger. This is an extension of the relationship you already have with us, not a new commercial ask.</p>
+</header>
+
+<section>
+  <h2>Who you'd be co-marketing with</h2>
+  <p class="sec-lede">WorldFirst is the cross-border payments platform for small and medium businesses, part of Ant International.</p>
+  <div class="stats">
+    <div class="stat"><div class="stat-n">1.6M+</div><div class="stat-l">businesses served</div></div>
+    <div class="stat"><div class="stat-n">200+</div><div class="stat-l">countries &amp; regions</div></div>
+    <div class="stat"><div class="stat-n">40+</div><div class="stat-l">currencies</div></div>
+    <div class="stat"><div class="stat-n">150K+</div><div class="stat-l">suppliers in-network</div></div>
+  </div>
+  <p class="note">Our audience is the operator: the owner who sources from China and Asia, ships worldwide and sells across marketplaces. If those are your customers too, we already share an audience.</p>
+</section>
+
+<section>
+  <h2>What every campaign includes</h2>
+  <p class="sec-lede">The same package for every qualified partner, so there is nothing to negotiate before we start talking about the story.</p>
+  <div class="pack">
+<div class="pk"><div class="pk-n">01</div><div class="pk-t">One hero film</div><div class="pk-d">Horizontal, under five minutes, fully produced by us. Named people from both brands on camera. You approve the cut before anything goes out.</div></div>
+<div class="pk"><div class="pk-n">02</div><div class="pk-t">Short-form cuts</div><div class="pk-d">Vertical versions from the same shoot, sized for social, so one production day feeds both brands' channels for weeks.</div></div>
+<div class="pk"><div class="pk-n">03</div><div class="pk-t">A campaign page</div><div class="pk-d">A dedicated page on our website showcasing the collaboration: the film, the story, both brands. Permanent, linkable, yours to use in your own decks and press.</div></div>
+<div class="pk"><div class="pk-n">04</div><div class="pk-t">Distribution</div><div class="pk-d">Our global social channels, our website and our newsletter. Exact placements agreed per campaign, alongside one co-publish from you.</div></div>
+</div>
+  <div class="split">
+    <div><div class="side-t">We bring</div><p>Concept and script, the full production, the campaign page, and distribution to our audience of global trade operators. We carry the cost.</p></div>
+    <div><div class="side-t">You bring</div><p>One spokesperson worth hearing, brand assets and approval, and one co-publish on your channels. Measured in hours, not budget.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>When we share a business goal</h2>
+  <p class="sec-lede">Optional, and only where it genuinely applies.</p>
+  <div class="opt">
+    <div class="opt-tag">Optional layer</div>
+    <p>Some partnerships have a commercial engine both sides are already pushing: a card programme where both brands grow when spend grows, a corridor product where both sides win on volume. Where that shared goal exists, the campaign can attach to it directly, with product-level presence, a joint milestone to point at, and a measure both sides agree on.</p>
+    <p style="margin-bottom:0">Where it doesn't, the campaign stands on its own as a story worth telling. Commercial mechanics and any offer for your customers are shaped with your partnership contact, not on this page.</p>
+  </div>
+</section>
+
+<section>
+  <h2>How it works</h2>
+  <div class="steps">
+    <div class="step"><div class="step-n">01</div><div class="step-b"><strong>A thirty-minute call</strong><span>What story is worth telling, and who should tell it.</span></div></div>
+    <div class="step"><div class="step-n">02</div><div class="step-b"><strong>One joint brief</strong><span>A single page: the story, who appears, where each side publishes. Your approvals run against this.</span></div></div>
+    <div class="step"><div class="step-n">03</div><div class="step-b"><strong>We shoot and produce</strong><span>One production day on your side, typically. We handle the rest.</span></div></div>
+    <div class="step"><div class="step-n">04</div><div class="step-b"><strong>Both sides publish</strong><span>Synchronised, with the campaign page live from day one. Weeks, not days: two-brand approvals take the time they take.</span></div></div>
+  </div>
+</section>
+
+<section>
+  <h2>The form, shown not told</h2>
+  <p class="sec-lede">What co-marketing looks like when B2B brands do it properly.</p>
+  <div class="cases">
+    <a class="case" href="https://blog.xero.com/news-events/revolut-business-partnership/" target="_blank" rel="noopener">
+      <span class="case-shot"><img src="img/revolut-business-xero.jpg" alt="Revolut Business × Xero" loading="lazy"/></span>
+      <span class="case-body"><span class="case-brands">Revolut Business × Xero</span>
+      <span class="case-line">Integration plus a real offer, with named leaders from both sides on camera and the partner distributing to their own base.</span></span></a>
+    <a class="case" href="https://www.youtube.com/watch?v=OmjqMzanUaU" target="_blank" rel="noopener">
+      <span class="case-shot"><img src="img/brex-navan.jpg" alt="Brex × Navan" loading="lazy"/></span>
+      <span class="case-body"><span class="case-brands">Brex × Navan</span>
+      <span class="case-line">A co-named product: launch film on one partner&#x27;s channel, webinar on the other&#x27;s, and the story picked up by business press.</span></span></a>
+    <a class="case" href="https://stripe.com/customers/amazon" target="_blank" rel="noopener">
+      <span class="case-shot"><img src="img/stripe-amazon.jpg" alt="Stripe × Amazon" loading="lazy"/></span>
+      <span class="case-body"><span class="case-brands">Stripe × Amazon</span>
+      <span class="case-line">The customer&#x27;s own executive telling the operations story on camera. The vendor never pitches.</span></span></a>
+    <a class="case" href="https://www.mastercard.com/news/ap/en/newsroom/press-releases/en/2024/mastercard-enables-convenient-and-secure-international-remittances-to-alipay-wallet/" target="_blank" rel="noopener">
+      <span class="case-shot"><img src="img/mastercard-alipay.jpg" alt="Mastercard × Alipay (Ant Group)" loading="lazy"/></span>
+      <span class="case-body"><span class="case-brands">Mastercard × Alipay (Ant Group)</span>
+      <span class="case-line">Two networks co-branding on a single corridor. The lockup and two named executives are the entire campaign.</span></span></a>
+  </div>
+</section>
+
+<section>
+  <h2>We already do this</h2>
+  <p class="sec-lede">Recent co-marketing from WorldFirst's own channels.</p>
+  <div class="owns">
+    <a class="own" href="https://www.linkedin.com/feed/update/urn:li:activity:7460569601081360384" target="_blank" rel="noopener">
+      <span class="own-t">WorldFirst × Amazon</span><span class="own-l">A joint webinar for sellers in Australia, New Zealand and Singapore.</span></a>
+    <a class="own" href="https://www.linkedin.com/feed/update/urn:li:activity:7459912676085960705" target="_blank" rel="noopener">
+      <span class="own-t">WorldFirst × Woolworths MarketPlus</span><span class="own-l">A partnership announcement opening a new marketplace path for cross-border sellers.</span></a>
+    <a class="own" href="https://www.linkedin.com/feed/update/urn:li:activity:7453368940204036096" target="_blank" rel="noopener">
+      <span class="own-t">WorldFirst × Citi</span><span class="own-l">PayTo brought into our account service for Australian exporters.</span></a>
+    <a class="own" href="https://www.linkedin.com/feed/update/urn:li:activity:7458846100561539072" target="_blank" rel="noopener">
+      <span class="own-t">WorldFirst × Mastercard</span><span class="own-l">Three awards at the Hong Kong and Macau annual partner awards.</span></a>
+  </div>
+</section>
+
+<section>
+  <h2>Which one are you?</h2>
+  <p class="sec-lede">The package is the same. What the story becomes is not.</p>
+  <div class="doors">
+    <a class="door" href="marketplaces.html"><div class="door-t">Marketplaces &amp; platforms</div><div class="door-d">Your sellers' hardest problem is the money side of selling. We make content that solves it, in your name.</div><div class="door-x">See the marketplace version →</div></a>
+    <a class="door" href="banks.html"><div class="door-t">Banks &amp; networks</div><div class="door-d">An innovation story your newsroom can't make alone, plus SME reach you don't otherwise have.</div><div class="door-x">See the institution version →</div></a>
+    <a class="door" href="clients.html"><div class="door-t">Clients &amp; brands</div><div class="door-d">Your going-global story, produced properly, in front of the operators who are your customers.</div><div class="door-x">See the brand version →</div></a>
+  </div>
+</section>
+
+<div class="cta"><h2>Thirty minutes</h2>
+<p>Bring the story you want more people to know. We'll bring three ways to tell it together, and what each one would take from your side.</p>
+<p style="margin-bottom:0"><strong style="color:#fff">Ask your WorldFirst partnership contact to set it up.</strong></p></div>
+
+<footer><span>WorldFirst · part of Ant International</span><span>Co-marketing programme</span></footer>
+</div></body></html>
