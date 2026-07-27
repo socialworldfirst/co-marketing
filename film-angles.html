@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="noindex, nofollow"/><meta name="generator" content="v1-film-angles-board-20260724"/>
+<title>Ten angles, five raters · World Card film</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{font-family:'Poppins',sans-serif;background:#fff;color:#1f2323;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+
+.fa-gate{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center}
+.fa-gate .gc{max-width:380px;width:100%}
+.fa-gate .ey{font-size:13px;font-weight:600;color:#ff0051;margin-bottom:14px}
+.fa-gate h1{font-size:28px;font-weight:600;letter-spacing:-.5px;margin-bottom:8px}
+.fa-gate .s{font-size:14px;color:#5b626a;margin-bottom:24px;line-height:1.6}
+.fa-gate form{display:flex;gap:9px}
+.fa-gate input{flex:1;border:1.5px solid #e6e8eb;border-radius:999px;padding:11px 18px;font-family:'Poppins';font-size:14px;outline:none}
+.fa-gate input:focus{border-color:#ff0051}
+.fa-gate button{border:none;background:#ff0051;color:#fff;border-radius:999px;padding:11px 24px;font-family:'Poppins';font-size:14px;font-weight:500;cursor:pointer}
+.fa-err{color:#ff0051;font-size:13px;margin-top:12px}
+
+#fa-doc{display:none}
+#fa-doc.on{display:block}
+.wrap{max-width:1300px;margin:0 auto;padding:26px 34px 30px}
+
+.hdr{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.ey{font-size:12px;font-weight:600;color:#ff0051;letter-spacing:.07em;margin-bottom:9px}
+h1{font-size:clamp(26px,3vw,36px);font-weight:600;letter-spacing:-1px;line-height:1.1}
+.tabs{display:flex;gap:8px}
+.tb{font-family:'Poppins';font-size:13px;font-weight:500;color:#69727d;background:#fff;border:1.5px solid #e6e8eb;border-radius:999px;padding:8px 20px;cursor:pointer}
+.tb:hover{border-color:#c3c8cc}
+.tb.on{border-color:#ff0051;color:#ff0051}
+.sub{font-size:13.5px;color:#69727d;line-height:1.6;margin:14px 0 18px;padding-bottom:16px;border-bottom:1px solid #eef0f2;max-width:1000px}
+.warn{display:block;margin-top:5px;font-size:12.5px;color:#9aa1a1}
+
+.view{display:none}
+.view.on{display:block}
+.grid{display:grid;grid-template-columns:1.06fr 1fr;gap:38px;align-items:start}
+
+.mrow{display:grid;grid-template-columns:26px 1fr 34px 34px 34px 40px 36px 74px;gap:6px;align-items:center;padding:9px 10px;border-radius:9px;cursor:pointer;border:1px solid transparent}
+.mrow:hover{background:#faf9fa}
+.mrow.sel{background:#f7f5f7}
+.mhead{cursor:default;padding-bottom:8px;border-bottom:1px solid #e6e8eb;border-radius:0}
+.mhead:hover{background:none}
+.mhead span{font-size:10.5px;font-weight:600;color:#9aa1a1;letter-spacing:.06em;text-transform:uppercase;text-align:center}
+.mhead .c-name{text-align:left}
+.c-rank{font-size:11.5px;color:#c3c8cc;font-variant-numeric:tabular-nums}
+.c-name{font-size:14px;font-weight:500;display:flex;align-items:center;gap:7px;min-width:0}
+.c-name .cd{font-size:11px;color:#c3c8cc;font-weight:500}
+.c-name .tt{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mrow.sel .c-name{color:#ff0051;font-weight:600}
+.mrow.sel .c-name .cd{color:#ff0051;opacity:.6}
+.c-s{font-size:13px;text-align:center;font-variant-numeric:tabular-nums}
+.s-hi{color:#1f2323;font-weight:600}
+.s-mid{color:#8b9298}
+.s-lo{color:#cdd2d6}
+.c-avg{display:flex;align-items:center;gap:8px;justify-content:flex-end}
+.c-avg b{font-size:13.5px;font-weight:600;font-variant-numeric:tabular-nums}
+.bar{width:34px;height:4px;background:#eef0f2;border-radius:2px;overflow:hidden;flex:none}
+.bar i{display:block;height:100%;background:#ff0051}
+.vd{display:inline-block;width:6px;height:6px;border-radius:50%;background:#ff0051;flex:none}
+.leg{margin-top:16px;padding-top:14px;border-top:1px solid #eef0f2;font-size:12px;color:#9aa1a1;display:flex;align-items:center;gap:6px}
+
+.detail{border:1px solid #e6e8eb;border-radius:16px;padding:26px 28px;max-height:calc(100vh - 220px);overflow-y:auto;position:sticky;top:22px}
+.detail .dc{font-size:11.5px;font-weight:600;color:#ff0051;letter-spacing:.07em;margin-bottom:9px}
+.detail h2{font-size:23px;font-weight:600;letter-spacing:-.5px;margin-bottom:13px;line-height:1.2}
+.detail .pitch{font-size:14px;color:#5b626a;line-height:1.68;padding-bottom:19px;border-bottom:1px solid #eef0f2}
+.vetobar{margin:16px 0 0;font-size:13px;color:#ff0051;line-height:1.55;border-left:2px solid #ff0051;padding-left:13px}
+.rl{margin-top:19px}
+.rr{padding:13px 0;border-bottom:1px solid #f2f4f5}
+.rr:last-child{border-bottom:none}
+.rh{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:6px}
+.rn{font-size:12.5px;font-weight:600}
+.rsc{font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;flex:none}
+.rv{font-size:13.3px;color:#5b626a;line-height:1.6}
+
+.bwrap{display:grid;grid-template-columns:1.25fr 1fr;gap:38px;align-items:start}
+.bh{font-size:11.5px;font-weight:600;color:#ff0051;letter-spacing:.07em;margin-bottom:14px}
+.blead{font-size:16px;color:#1f2323;line-height:1.6;font-weight:500;margin-bottom:24px;max-width:640px}
+.rec{border-top:1px solid #e6e8eb}
+.rec .r{display:grid;grid-template-columns:132px 46px 1fr;gap:16px;padding:15px 0;border-bottom:1px solid #e6e8eb;align-items:start}
+.rec .r .k{font-size:13.5px;font-weight:600}
+.rec .r .src{font-size:11.5px;color:#ff0051;font-weight:600;padding-top:2px}
+.rec .r .t{font-size:13.5px;color:#5b626a;line-height:1.6}
+.dropped{margin-top:30px}
+.dr{display:flex;gap:12px;padding:11px 0;border-bottom:1px solid #f2f4f5;font-size:13.3px;color:#5b626a;line-height:1.58}
+.dr b{color:#1f2323;font-weight:600;flex:none;min-width:112px}
+.fx{border:1px solid #e6e8eb;border-radius:16px;padding:22px 24px}
+.fxr{padding:14px 0;border-bottom:1px solid #f2f4f5}
+.fxr:last-child{border-bottom:none}
+.fxr .n{font-size:11.5px;font-weight:600;color:#ff0051;letter-spacing:.05em;text-transform:uppercase;margin-bottom:6px}
+.fxr .t{font-size:13.3px;color:#5b626a;line-height:1.6}
+
+.lockw{max-width:1300px;margin:0 auto;padding:0 34px 40px;font-size:12px;color:#c3c8cc}
+.lockw a{border-bottom:1px solid #e6e8eb}
+
+@media(max-width:1080px){
+ .grid,.bwrap{grid-template-columns:1fr;gap:26px}
+ .detail{position:static;max-height:none}
+}
+@media(max-width:680px){
+ .wrap{padding:24px 18px}
+ .mrow{grid-template-columns:22px 1fr 60px;gap:8px}
+ .mrow .c-s{display:none}
+ .mhead .c-s{display:none}
+ .rec .r{grid-template-columns:1fr;gap:4px}
+}
+</style>
+</head>
+<body>
+
+<div class="fa-gate" id="fa-gate">
+  <div class="gc">
+    <div class="ey">WorldFirst · Internal</div>
+    <h1>Ten angles, five raters</h1>
+    <p class="s">Story angle board for the World Card film.</p>
+    <form id="fa-form">
+      <input id="fa-pw" type="password" placeholder="password" autocomplete="current-password"/>
+      <button type="submit">Enter</button>
+    </form>
+    <div class="fa-err" id="fa-err" hidden></div>
+  </div>
+</div>
+
+<div id="fa-doc">
+  <div class="wrap" id="fa-stage"></div>
+  <div class="lockw"><a href="#" id="fa-lock">lock this device</a></div>
+</div>
+
+<script>
+const FA_BLOB = {"v": 1, "iterations": 150000, "salt": "8YQRoOLakvd99vy7IuOpvQ==", "iv": "hyDvbDafnXHTEIOO", "ciphertext": "oPcaodFYXrTPTJ8g32Cew3qefhgSBr2q07o3IbtMB5iGBf6+DGxmo8GQ/DuQdShwqn5kjjlDmftR09rgWeopthRQhd8w9wEHC47oM6j66V5+NkUfBJ5s5/eNojepEfAFz7zXGM9mc4uCLI2ls1Zr8xBIj1yytkBxWPK+UPAilTxXOLr33wV7tIJ8Vh8n7pUtfpwHzX+5bt6Q0/h7LEeQ4iywcIE1rjzEjYcYNx+ljMi8WWogYkwoSUzwFMQC3e6E0C8+k07a1wsbDeESd73SnVpVYplRkF5zurg3J0Lmq5vQfrqhrM7pV95oVVglR8g73UaIDs8M5Cnskt6bnn3tZQwvrmSYP9UswRXleSYp+r430YvjIvUvrBd/zz6CdNW5uaiD3CDpAdE0GElt29riaJsO+Dffa33gwCIA/3J9PVOBiXn3s+sykCfGl5Y6HDfQpqkyovYm6vllaTMcdVZrZXFOLwi5EwE7AHzAeB9g7npo/nzBjVhqNFDQNae4NpGwn28m48/93ZkLcu3wytGTISiTvxl1gMUfCWLp6jMv7ufsqBsGygQ9J4vbWvcUb6JTELNoZJIoEh3EgMzA2f+tO9JJ0D5YF2E4v6tHcuSSKMpLIdrIEu0eCZPVj9fxn4bXnVIgwI6+1kZ2puv22D6G5TMVi/3Sr1id0OZTH26ut8kpYGOE6jdsteK4ZsxalCEic5Y3A+c4J/ecFagja973mYp7YTs4gDFMFUaIu+taXfNwnm33OdxV+ULPHriqHybPUPJPj/uEjBMdOtx802TJ1x/Yj5BO57zfh19mBlwHwa1OwmdM20aFvXd7par3MAZkkbtlH8qjU85jvYn90agSKEMyIgO2VPkpt0UY7Urbum5uQJCmnio6eMPP5PMiT/25nQKPJmxHW3iYGzn1e7uboJHYfTrCV2Vs+xzgUAXYs3zLqAh7wyeqq4qIg7b9c4dO7RjC8+0bWO5Fz3ZdB2UlkJn+tPQjQgeNlhoXamfRe8zIRe6dtO9buE2SyiFU9HbV4VpssPhLL7sSFEuPN1ODCRhnOo/vRkU53Zxy0Hpj+REtusP5NM1LM3IcUynaMJNYqmW4APPBx0O03hAdTAoaU0VGiuNAwI5RF4DVZIjWbalzcUPMl0N0fLAxGsdf3c2AG4SEH2cBqKC9SS40DeZI7tc7i880WjXtWXhZC7XtCC4fjdciTPbUPyrF6jNuewnwzSg733rhawNkWcEJjJnU31LtCrW1UHTGoXCytRHVRGzWmtNuf9asqYBgpBB5tYnBDreUWHDMLlAIJE64Pm8SydH+bED296x+7JdO0Dm1fidlrPJ0CMI92ndt0w3N8Y5U8XvhYP5D4qyEIjpjzfTk4WelRwZShsgTANTWx6jtOr/Z90PDimWZPUwf+BfX7qiTRsWCefAn5sBG7wAW/9SilTC2G3mDq+B7Bv5/3FyTSMWYhTUfb0JgW+cKH+kufrJPMGlctyMRorvf4+03jBwvaZZ671XxJfTpp9gmU3H+I5gJ+cYRlZeCkcY4LOGeccgj+ZkymLhNHahfZWdFC+/LPBSo07IxJ6KIfiG5V6IvYJ8+HdL6jfOOGJDzdttPPTpj6AQn4Jy7xea4P6bO0DNHU9yCr92bFYj5Jacf8iN45XLTcyzKtuG9NtojZGyz9yLO02wNapYMSkKoxiB8WeNo336repSb96MbUqtkCai+3lmGZR/u62gtCPtFXON8wxhrm2Wc5J1wKtJtFTlJziP5anLvPZtsBI9vqNwtEMw9HqLHeW22fPBXnLbi27TS7vormzyvJv46hyYyiwIOyQ=="};
+const FA_D = {"raters": [["op", "Operator", "Target audience. 8-person SG home-goods brand, 1688 + Canton Fair, US$25k/mo ad spend."], ["mc", "Mastercard", "Partner marketing, SEA. Rates brand safety, approval friction, network role."], ["dir", "Director", "Documentary-trained commercial director. Rates filmability, visual spine, edit engine."], ["br", "WF Brand", "Global brand lead. Rates trust, platform stature, unfakeable differentiation."], ["dist", "Distribution", "Head of social distribution. Rates hook, retention, cuttability, boostability."]], "angles": [{"code": "A1", "title": "The Five Jobs", "avg": 7.6, "pitch": "Chaptered explainer. Cold open: five voices each name a payment they made this week. WorldFirst voice explains the card in 30 seconds. Five chapters by use case (ads, 1688 and suppliers, freight, travel, team cards), each led by one client. Mastercard network segment after the travel chapter. Closes on the month-end statement and the cashback beat.", "s": {"op": 8, "mc": 8, "dir": 7, "br": 7, "dist": 8}, "v": {"op": "Chapters mean I can skip straight to the 1688 part, that alone respects my time more than most fintech videos.", "mc": "Modular chapters mean legal can cut one without killing the film, our travel-adjacent network segment is bounded and factual, cleanest 3-week path here.", "dir": "Bulletproof against weak soundbites and chapters map 1:1 to the five verticals, but no momentum: the hero cuts like five stitched mini-ads, not a film.", "br": "Useful and modular, but it is the film Airwallex already makes; chapters organise facts, they do not build a brand.", "dist": "Cleanest cut map here, five born verticals, but chapters are structure not hook, and every chapter break bleeds hero viewers."}}, {"code": "A2", "title": "The Month", "avg": 7.5, "pitch": "Calendar spine, day-stamped. Day 1 an RMB supplier deposit, Day 8 an ad scale-up, Day 15 Canton Fair, Day 22 a new-hire virtual card issued in seconds, Day 30 the statement drops with cashback. Cast interwoven chronologically. Teaches the rhythm of a cross-border month.", "s": {"op": 6, "mc": 8, "dir": 9, "br": 8, "dist": 6.5}, "v": {"op": "Nice rhythm, but it is a story I must sit through, I cannot jump to the bit I need, and I already live this calendar.", "mc": "Strong engines-of-growth narrative, the mid-month road appearance is contextual and contained, day-stamps are WorldFirst claims, not ours.", "dir": "Time is the narrator: day-stamp supers carry story, scenes are activity-led so non-actors just do their jobs, and cross-cutting four businesses hides any weak bite.", "br": "The day-stamped spine proves habitual, embedded use, the closest thing here to operating-system positioning, though the format is copyable.", "dist": "Day-stamps give momentum, but four businesses on one timeline confuses mid-watch and a \"Day 14\" cold open dies contextless on Shorts."}}, {"code": "A7", "title": "Operator FAQ", "avg": 7.5, "pitch": "Built from the real questions sellers ask about business cards. Can I pay 1688 by card? Is cashback really uncapped? What about trade fairs? How do I stop team overspend? The best-placed cast member answers each. Each vertical is one question. Extensible into a standing series.", "s": {"op": 9, "mc": 7, "dir": 6, "br": 7, "dist": 8.5}, "v": {"op": "These are the exact questions I type into Google at 11pm, answer them straight and I will watch every one and forward two.", "mc": "Factual and modular, verticals cut cleanly, but \"is cashback really uncapped?\" makes the film claims-forward and puts us one edit away from substantiation questions.", "dir": "Best vertical engine here, real questions lower the performance bar, but there is no hero in it: 3.5 minutes of FAQ is a webinar.", "br": "Best series engine on the list, weakest hero; utility compounds trust but there is no spine for a flagship.", "dist": "Question hooks are native currency on every feed, each Q and A is a born vertical plus an extensible series; the hero is the weakness, compilation not film."}}, {"code": "A3", "title": "The Statement", "avg": 7.2, "pitch": "Opens on a real month-end card statement on screen. Each line item cuts to the person and the scene behind it. Finale is the cashback line, the only line that gives money back. WorldFirst voice closes: now go read yours.", "s": {"op": 7, "mc": 5, "dir": 7, "br": 8, "dist": 9}, "v": {"op": "Real statement lines are the most honest thing a payments brand can show me, but if the numbers look staged I close it in 5 seconds.", "mc": "The hero prop is a compliance document, every visible line item becomes a reviewable claim, and statement artwork drags our brand identity into design review.", "dir": "The line items drive the cut and the cashback finale is earned, but the spine is a screen: cold-opening on paperwork, and a mocked-up statement chips at documentary credibility.", "br": "Receipts-first transparency is a trust move rivals cannot match without matching numbers, and \"now go read yours\" is confident, implicitly comparative, never punchy.", "dist": "Real-statement voyeurism is a proven finance hook, each line item is an open loop paying off at the cashback line, and every line pre-cuts to a vertical whose super is the swappable market number."}}, {"code": "A8", "title": "Three Days in Guangzhou", "avg": 6.8, "veto": "Mastercard", "pitch": "Location film during Canton Fair season. The card works the whole trip: booth deposit, hotel tap, taxi, a late-night ad top-up from the hotel room, an instant virtual card for a local sourcing agent. Mastercard spokesperson walks the fair floor talking acceptance. Strongest visuals, narrower to importers, timing bound to the fair.", "s": {"op": 7, "mc": 3, "dir": 8, "br": 9, "dist": 7}, "v": {"op": "This is my actual fair life and I would watch it before fair season, but it is travel content, mostly for importers who fly.", "mc": "Our exec on a China fair floor talking 200-plus-country acceptance opens regional sensitivities I will not touch, and shoot logistics alone blow the 3-week window.", "dir": "Best pure filmmaking: real stakes, one city, three days, visuals everywhere. But it hangs on one founder performing, fair permits, immovable dates, and it orphans two of the five jobs.", "br": "The one film competitors cannot shoot: real fair floor, real supplier, the card working inside the corridor we actually own. Access is the brand.", "dist": "Strongest visuals, vlog grammar retains, but all five verticals skew importer and location film is the costliest to re-version."}}, {"code": "A9", "title": "From One Card to Twenty-Five", "avg": 6.6, "pitch": "Scale story. The spine is growth: a solo founder\u2019s first card through to a 10-person team\u2019s card system. Finance lead is the lead voice, the other clients are stages of the journey. Positions the card as a system, not a perk.", "s": {"op": 6, "mc": 7, "dir": 7, "br": 7, "dist": 6}, "v": {"op": "Team card control is a real headache at 8 staff, but \"growth journey\" framing is brand-film cosplay.", "mc": "Scale-with-controls maps neatly to connect and protect, very safe, but the network role feels bolted on rather than earned.", "dir": "Real arc, and finance leads are usually your most articulate cast, but borrowing four companies as stages of one journey muddies whose story it is.", "br": "Card-as-infrastructure is genuine platform positioning and LinkedIn-native, but visually thin, and every fintech claims it scales with you.", "dist": "Slow-open growth arc reads as testimonial ad and the middle does not chunk into standalone cuts; team-controls angle saves it on LinkedIn only."}}, {"code": "A6", "title": "Follow the Dollar", "avg": 6.2, "pitch": "One dollar earned on Amazon travels through the business: into ads, a 1688 deposit, freight, a hotel tap in Guangzhou, a team card, and comes back as cashback. A simple motion graphic connects the live-action scenes. Clients narrate the leg they own. Mastercard owns the rails leg.", "s": {"op": 5, "mc": 9, "dir": 5, "br": 5, "dist": 7}, "v": {"op": "Pretty concept, but what I learn is that money moves through a business, which I already knew, nothing usable tomorrow.", "mc": "Rails is literally what we are, a discrete scripted motion-graphic leg is the easiest asset I could walk through franchise review, zero comparative risk, clean connect-small-businesses fit.", "dir": "The motion-graphic dollar is a narrator in a costume: heavy post, ad drift, scripted legs from non-actors, and the literal dollar journey invites legal nitpicks.", "br": "Slick motion graphics is Airwallex and Wise home turf, and giving Mastercard the rails leg hands them the infrastructure story; we shrink to issuer.", "dist": "Best hero watch-time shape, one continuous thread with a payoff loop, but the stitch dies in the cut: verticals orphan the device, motion graphics raise re-version cost."}}, {"code": "A4", "title": "The Switch", "avg": 5.5, "veto": "Mastercard", "pitch": "Before and after audit. Each client tells what their old setup cost them: a 3% FX markup, a card declined at a supplier, a founder\u2019s personal card paying company ads, zero spend visibility. Then the after. Strongest problem-first conversion energy, most negative tone.", "s": {"op": 6, "mc": 2, "dir": 5, "br": 6, "dist": 8.5}, "v": {"op": "The founder-paying-company-ads-on-a-personal-card pain is literally me, but before/after testimonial energy smells like an ad, and I am allergic.", "mc": "Banks are our issuing customers, I cannot put a Mastercard spokesperson in a film built on bank-bashing, comparative pricing, and a declined card that viewers may read as ours.", "dir": "The before half is unshootable: staged failure with non-actors or interview wallpaper, and real SMEs rarely articulate old pain crisply on camera.", "br": "A conquest demand asset, not brand; it defines us by competitors\u2019 pricing and reads challenger, not platform.", "dist": "Problem-first opens hardest and boosts cleanest, but four repeated audits sag by client three and aggressive cost claims add co-brand compliance drag."}}, {"code": "A10", "title": "The Card That Pays You Back", "avg": 5.0, "pitch": "Cashback-led. Hook: this business card paid my ad bill back. Prove it across the five jobs, biggest-month cashback super at the end. Most thumb-stopping hook, most ad-like, rates vary by market.", "s": {"op": 5, "mc": 5, "dir": 4, "br": 4, "dist": 7}, "v": {"op": "The hook stops my thumb, then I feel sold to, and cashback-first attracts points chasers, not operators.", "mc": "A cashback-led open reads as a rewards promo, and our presence beside a \"paid my ad bill back\" testimonial looks like we co-signed the claim.", "dir": "That is an ad: claim-first kills documentary tone in ten seconds, and the hook is a number the supers-only rule will not let anyone say.", "br": "Leads with the bribe; rate-shopper framing that commoditises the brand and accrues zero trust.", "dist": "Best raw hook, worst shape: spike then cliff after the reveal, and five cashback-led cuts repeat themselves. A hook line, not a system."}}, {"code": "A5", "title": "Six Chairs, Same Questions", "avg": 4.7, "pitch": "Pure interview grid. All six people answer the same five questions. What did you pay for this week? What surprised you? What broke before? Show me your last transaction. Advice for someone starting? Rapid intercut montage, structure emerges in the edit.", "s": {"op": 4, "mc": 4, "dir": 5, "br": 5, "dist": 5.5}, "v": {"op": "Structure emerges in the edit means nobody decided what I am supposed to learn, it is a montage of vibes.", "mc": "The intercut grid scatters our spokesperson across the full runtime, I cannot bound the 15% or excerpt her segment for approval, and same-questions framing drifts her into product claims by adjacency.", "dir": "Cheapest and edit-safe, but 100% soundbite-dependent with zero visual spine: shoot the grid as coverage insurance inside another concept, never as the film.", "br": "Real voices trapped in the deadest format in B2B; any fintech shoots six chairs in a day.", "dist": "Worst first three seconds, flattest curve, a hero-first format in a cuts-first brief."}}], "recipe": [["Spine", "A2", "One real calendar month, day-stamped. Shot on each business\u2019s actual transaction days so the dates are fact, not edit fiction."], ["Skippability", "A1", "The day-stamps double as chapter markers, so a viewer can jump straight to the 1688 day instead of sitting through the month."], ["Hook and ending", "A3", "Cold-open on the circled cashback line, then rewind to Day 1 and read down to it. The circled line is the thumbnail."], ["The corridor", "A8", "Guangzhou becomes Days 13 to 15 of the month, with all four operators threaded through it. Keeps the footage competitors cannot fake without becoming a travel film."], ["Mastercard", "\u2014", "One discrete, pre-scored, excerptable module on the network fact. Card-transaction scenes only, never the fair floor. Their rater says a self-contained segment clears in about two weeks."], ["The verticals", "A7", "Five question-led cutdowns, each answering in the first ten seconds with the number in a super. Plus a \"what\u2019s the catch\" clip on limits and eligibility. Extends into a standing series after launch."]], "dropped": [["A4", "The Switch", "Vetoed. Banks are Mastercard\u2019s issuing customers, so a film built on bank-bashing is unapprovable with their logo on it, at any timeline."], ["A10", "Pays You Back", "Lowest creative scores on the board. Rents attention with an incentive and spends nothing into trust."], ["A5", "Six Chairs", "Last on every list but one. No spine, no visual engine, worst opening three seconds."], ["A6", "Follow the Dollar", "Its only fan was Mastercard, for self-interested reasons. It hands them the infrastructure story and shrinks us to issuer."]], "fixes": [["op", "Answer in the first ten seconds of each question, number in a super, then show the how. Add the question everyone really asks, what is the catch. That honesty clip is the one that gets forwarded."], ["mc", "Lock the network segment to card transactions only, deliver it as a standalone pre-scored module. A self-contained factual segment clears in two weeks."], ["dir", "Shoot inside one real calendar month, crew blocks timed to each business\u2019s actual transaction days, with cast phone-shot inserts between blocks so the day-stamps are fact."], ["br", "Thread all four operators through the three days. Guangzhou is the setting, the platform is the subject. Mastercard gets one network line: a guest in our house, lifting us."], ["dist", "Cold-open the cashback line, then rewind to line one and read down to it. Fixes the static document open, and the circled line is your thumbnail."]]};
+const FA_LS = 'bc_pw';
+let faBound=false, faSel=0;
+function b64b(s){const bin=atob(s);const b=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)b[i]=bin.charCodeAt(i);return b;}
+async function faDecrypt(pw){
+  const enc=new TextEncoder();
+  const base=await crypto.subtle.importKey('raw',enc.encode(pw),'PBKDF2',false,['deriveKey']);
+  const key=await crypto.subtle.deriveKey({name:'PBKDF2',salt:b64b(FA_BLOB.salt),iterations:FA_BLOB.iterations,hash:'SHA-256'},base,{name:'AES-GCM',length:256},false,['decrypt']);
+  const pt=await crypto.subtle.decrypt({name:'AES-GCM',iv:b64b(FA_BLOB.iv)},key,b64b(FA_BLOB.ciphertext));
+  return new TextDecoder().decode(pt);
+}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function cls(n){return n>=8?'s-hi':(n>=6?'s-mid':'s-lo');}
+function fmt(n){return Number.isInteger(n)?n:n.toFixed(1);}
+
+function faRows(){
+  const R=FA_D.raters.map(r=>r[0]);
+  return FA_D.angles.map(function(a,i){
+    const sc=R.map(k=>'<span class="c-s '+cls(a.s[k])+'">'+fmt(a.s[k])+'</span>').join('');
+    return '<div class="mrow'+(i===faSel?' sel':'')+'" data-i="'+i+'">'
+      +'<span class="c-rank">'+(i+1)+'</span>'
+      +'<span class="c-name"><span class="cd">'+a.code+'</span><span class="tt">'+esc(a.title)+'</span>'
+      +(a.veto?'<span class="vd" title="Veto: '+esc(a.veto)+'"></span>':'')+'</span>'
+      +sc
+      +'<span class="c-avg"><span class="bar"><i style="width:'+Math.round(Math.max(6,Math.min(100,(a.avg-4.2)/3.6*100)))+'%"></i></span><b>'+a.avg.toFixed(1)+'</b></span>'
+      +'</div>';
+  }).join('');
+}
+function faDetail(){
+  const a=FA_D.angles[faSel];
+  const rows=FA_D.raters.map(function(r){
+    const k=r[0];
+    return '<div class="rr"><div class="rh"><span class="rn">'+esc(r[1])+'</span>'
+      +'<span class="rsc '+cls(a.s[k])+'">'+fmt(a.s[k])+' / 10</span></div>'
+      +'<div class="rv">'+esc(a.v[k])+'</div></div>';
+  }).join('');
+  return '<div class="dc">'+a.code+' · average '+a.avg.toFixed(1)+'</div>'
+    +'<h2>'+esc(a.title)+'</h2><div class="pitch">'+esc(a.pitch)+'</div>'
+    +(a.veto?'<div class="vetobar">'+esc(a.veto)+' veto. This rating outranks the average, the angle cannot run as a co-branded piece in this form.</div>':'')
+    +'<div class="rl">'+rows+'</div>';
+}
+function faBuild(){
+  const rec=FA_D.recipe.map(r=>'<div class="r"><span class="k">'+esc(r[0])+'</span><span class="src">'+esc(r[1])+'</span><span class="t">'+esc(r[2])+'</span></div>').join('');
+  const drop=FA_D.dropped.map(d=>'<div class="dr"><b>'+d[0]+' '+esc(d[1])+'</b><span>'+esc(d[2])+'</span></div>').join('');
+  const nm={};FA_D.raters.forEach(r=>nm[r[0]]=r[1]);
+  const fx=FA_D.fixes.map(f=>'<div class="fxr"><div class="n">'+esc(nm[f[0]])+'</div><div class="t">'+esc(f[1])+'</div></div>').join('');
+  return '<div class="bwrap"><div>'
+    +'<div class="bh">The synthesis</div>'
+    +'<p class="blead">No single angle wins. The two highest creative scores are both vetoed or structurally weak on their own, so the film is assembled from four of them. Working title: The Month.</p>'
+    +'<div class="rec">'+rec+'</div>'
+    +'<div class="dropped"><div class="bh" style="margin-top:6px">Dropped</div>'+drop+'</div>'
+    +'</div><div><div class="bh">Each rater\u2019s one fix</div><div class="fx">'+fx+'</div></div></div>';
+}
+function faPaint(){
+  document.getElementById('fa-rows').innerHTML=faRows();
+  document.getElementById('fa-detail').innerHTML=faDetail();
+}
+function faReveal(h){
+  const stage=document.getElementById('fa-stage');
+  if(!stage.dataset.filled){stage.innerHTML=h;stage.dataset.filled='1';}
+  document.getElementById('fa-gate').style.display='none';
+  document.getElementById('fa-doc').classList.add('on');
+  if(faBound)return; faBound=true;
+  faPaint();
+  document.getElementById('fa-build').innerHTML=faBuild();
+  document.getElementById('fa-rows').addEventListener('click',function(e){
+    const r=e.target.closest('.mrow'); if(!r)return;
+    faSel=parseInt(r.dataset.i,10); faPaint();
+  });
+  document.querySelectorAll('.tb').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('.tb').forEach(x=>x.classList.remove('on'));
+      b.classList.add('on');
+      document.querySelectorAll('.view').forEach(v=>v.classList.remove('on'));
+      document.getElementById('fa-'+b.dataset.view).classList.add('on');
+    });
+  });
+  document.addEventListener('keydown',function(e){
+    if(!document.getElementById('fa-board').classList.contains('on'))return;
+    if(e.key==='ArrowDown'){e.preventDefault();faSel=Math.min(FA_D.angles.length-1,faSel+1);faPaint();}
+    if(e.key==='ArrowUp'){e.preventDefault();faSel=Math.max(0,faSel-1);faPaint();}
+  });
+}
+async function faTry(pw,silent){
+  const err=document.getElementById('fa-err');
+  try{const h=await faDecrypt(pw);try{localStorage.setItem(FA_LS,pw);}catch(e){}faReveal(h);}
+  catch(e){if(!silent){err.textContent='wrong password';err.hidden=false;}try{localStorage.removeItem(FA_LS);}catch(e2){}}
+}
+document.getElementById('fa-form').addEventListener('submit',function(e){e.preventDefault();faTry(document.getElementById('fa-pw').value,false);});
+document.addEventListener('click',function(e){if(e.target&&e.target.id==='fa-lock'){e.preventDefault();try{localStorage.removeItem(FA_LS);}catch(err){}location.reload();}});
+(function(){let s=null;try{s=localStorage.getItem(FA_LS);}catch(e){}if(s)faTry(s,true);else document.getElementById('fa-pw').focus();})();
+</script>
+</body></html>
